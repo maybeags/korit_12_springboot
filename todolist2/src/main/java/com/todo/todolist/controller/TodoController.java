@@ -24,6 +24,7 @@ public class TodoController {
     }
 
     // todo 조회 API
+    @GetMapping
     public ResponseEntity<List<TodoResponse>> getAllTodos() {
         return ResponseEntity.ok(todoService.getTodoList());
     }
